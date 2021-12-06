@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">GameSorter</string>
+    <string name="entrar">Entrar</string>
+    <string name="registrar">Registrar</string>
+    <string name="continuar_como_convidado">Continuar como convidado</string>
+    <string name="senha">Senha</string>
+    <string name="login">Login</string>
+    <string name="email">Email</string>
+    <string name="digite_sua_senha">Digite sua senha</string>
+    <string name="digite_seu_email">Digite seu email</string>
+    <string name="confirme_sua_senha">Confirme sua senha</string>
+    <string name="voltar">Voltar</string>
+    <string name="favoritos">Favoritos</string>
+    <string name="configuracoes">Configurações</string>
+    <string name="historico">Histórico</string>
+    <string name="modo_escuro">Modo Escuro</string>
+    <string name="meu_perfil">Meu Perfil</string>
+    <string name="lougout">Lougout</string>
+    <string name="logout">Logout</string>
+    <string name="jogo_sorteado">Jogo sorteado!</string>
+    <string name="clique_na_roleta">Clique na roleta para sortear</string>
+    <string name="favoritos">Favoritos</string>
+</resources>

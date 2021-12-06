@@ -1,0 +1,121 @@
+<FrameLayout
+        android:id="@+id/frameSignUp"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/gradient_background" >
+
+        <include layout="@layout/standard_card_layout" />
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="170dp"
+            android:gravity="center" >
+
+        <TextView
+                android:id="@+id/signUpTextViewRegistrar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:layout_marginTop="30dp"
+                android:text="@string/registrar"
+                android:textColor="@color/black"
+                android:textSize="30sp"
+                android:textAlignment="center"/>
+        <TextView
+                android:id="@+id/signUpTextViewEmail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="15dp"
+                android:textSize="20sp"
+                android:layout_marginTop="60dp"
+                android:text="@string/email"
+                android:textColor="@color/black"
+                android:textStyle="bold" />
+
+        <EditText
+                android:id="@+id/signUEditTextEmail"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginHorizontal="20dp"
+                android:backgroundTint="@color/black"
+                android:ems="10"
+                android:hint="@string/digite_seu_email"
+                android:textColorHint="@color/grey"
+                android:inputType="text" />
+
+        <TextView
+                android:id="@+id/signUpTextViewSenha"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="15dp"
+                android:textSize="20sp"
+                android:text="@string/senha"
+                android:textColor="@color/black"
+                android:textStyle="bold" />
+
+        <EditText
+                android:id="@+id/signUpEditTextSenha"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="20dp"
+                android:backgroundTint="@color/black"
+                android:ems="10"
+                android:hint="@string/digite_sua_senha"
+                android:textColorHint="@color/grey"
+                android:inputType="textPassword" />
+
+        <TextView
+                android:id="@+id/signUpTextViewConfirmacaoSenha"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="15dp"
+                android:textSize="20sp"
+                android:text="@string/confirme_sua_senha"
+                android:textColor="@color/black"
+                android:textStyle="bold" />
+
+        <EditText
+                android:id="@+id/signUpEditTextConfirmacaoSenha"                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="20dp"
+                android:layout_marginBottom="30dp"
+                android:backgroundTint="@color/black"
+                android:ems="10"
+                android:hint="@string/confirme_sua_senha"
+                android:textColorHint="@color/grey"
+                android:inputType="textPassword" />
+
+        <Button
+                android:id="@+id/signUpButtonRegistrar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="?android:attr/borderlessButtonStyle"
+                android:text="@string/registrar"
+                android:textColor="@color/black"
+                android:textAllCaps="false"
+                android:textStyle="bold"
+                android:textSize="20sp"
+                android:backgroundTint="@color/whitegrey" />
+
+        <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:layout_marginHorizontal="120dp"
+                android:background="@color/black" >
+        </LinearLayout>
+        <Button
+                android:id="@+id/buttonSignUpVoltar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="?android:attr/borderlessButtonStyle"
+                android:layout_marginTop="120dp"
+                android:text="@string/voltar"
+                android:textColor="@color/black"
+                android:textAllCaps="false"
+                android:textStyle="bold"
+                android:textSize="20sp"/>
+    </LinearLayout>
+</FrameLayout>

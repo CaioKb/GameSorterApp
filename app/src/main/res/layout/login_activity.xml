@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+        android:id="@+id/frameLogin"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/gradient_background">
+
+        <include layout="@layout/standard_card_layout" />
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginTop="200dp"
+                android:gravity="center" >
+
+            <TextView
+                    android:id="@+id/signInTextViewEntrar"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:text="@string/entrar"
+                    android:textColor="@color/black"
+                    android:textSize="30sp"
+                    android:textAlignment="center" />
+
+            <TextView
+                    android:id="@+id/signInTextViewEmail"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="15dp"
+                    android:textSize="20sp"
+                    android:layout_marginTop="60dp"
+                    android:text="@string/email"
+                    android:textColor="@color/black"
+                    android:textStyle="bold" />
+
+            <EditText
+                    android:id="@+id/signInEditTextEmail"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="30dp"
+                    android:layout_marginHorizontal="20dp"
+                    android:backgroundTint="@color/black"
+                    android:ems="10"
+                    android:hint="@string/digite_seu_email"
+                    android:textColorHint="@color/grey"
+                    android:inputType="textWebEmailAddress" />
+
+            <TextView
+                    android:id="@+id/signInTextViewSenha"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="15dp"
+                    android:textSize="20sp"
+                    android:text="@string/senha"
+                    android:textColor="@color/black"
+                    android:textStyle="bold" />
+
+            <EditText
+                    android:id="@+id/signInEditTextSenha"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="20dp"
+                    android:backgroundTint="@color/black"
+                    android:ems="10"
+                    android:hint="@string/digite_sua_senha"
+                    android:textColorHint="@color/grey"
+                    android:inputType="textPassword" />
+
+            <Button
+                    android:id="@+id/signInButtonEntrar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="90dp"
+                    style="?android:attr/borderlessButtonStyle"
+                    android:text="@string/entrar"
+                    android:textColor="@color/black"
+                    android:textAllCaps="false"
+                    android:textStyle="bold"
+                    android:textSize="20sp"
+                    android:backgroundTint="@color/whitegrey" />
+
+            <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginHorizontal="120dp"
+                    android:background="@color/black"
+                    android:layout_marginBottom="100dp">
+            </LinearLayout>
+
+            <Button
+                    android:id="@+id/buttonLoginVoltar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    style="?android:attr/borderlessButtonStyle"
+                    android:text="@string/voltar"
+                    android:textColor="@color/black"
+                    android:textAllCaps="false"
+                    android:textStyle="bold"
+                    android:textSize="20sp"/>
+        </LinearLayout>
+</FrameLayout>

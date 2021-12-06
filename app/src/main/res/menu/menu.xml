@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+        xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <item
+            android:id="@+id/menuFavoritos"
+            android:title="@string/favoritos" />
+    <item
+            android:id="@+id/menuHistorico"
+            android:title="@string/historico" />
+    <item
+            android:id="@+id/menuConfigurcoes"
+            android:title="@string/configuracoes" />
+
+    <item
+            android:id="@+id/menuModoEscuro"
+            android:title="@string/modo_escuro" />
+
+    <item
+            android:id="@+id/menuMeuPerfil"
+            android:title="@string/meu_perfil" />
+
+    <item
+            android:id="@+id/menuLogout"
+            android:title="@string/logout" />
+</menu>

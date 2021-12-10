@@ -43,6 +43,7 @@
                     android:textSize="15sp" />
 
             <TextView
+                    android:id="@+id/jogoSorteado"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_alignParentBottom="true"
@@ -51,7 +52,7 @@
                     android:textAlignment="center"
                     android:textColor="@color/black"
                     android:textSize="40sp"
-                    android:visibility="visible">
+                    android:visibility="invisible">
 
             </TextView>
 

@@ -12,6 +12,8 @@ import user.Usuario;
 
 import application.R;
 
+import java.util.ArrayList;
+
 public class DataBaseManager extends SQLiteOpenHelper {
     private static final String LOG = "DatabaseManager";
     private static final int DATABASE_VERSION = 1;
@@ -98,16 +100,18 @@ public class DataBaseManager extends SQLiteOpenHelper {
         db.close();
         return rows;
     }
-
-    public void readAllUsuarios (Context context, ListView lv) {
+    public void readAllUsuarios (Context context, ArrayList<String> arrayInfo, String info) {
         SQLiteDatabase db = this.getWritableDatabase();
         String[] columns = {"_id", "email", "senha"};
-        Cursor data = db.query(TABLE_USERS, columns, null, null, null,
+        Cursor cursor = db.query(TABLE_USERS, columns, null, null, null,
                 null, null);
-        int[] to = {R.id.signInTextViewEmail, R.id.signInTextViewSenha};
-        SimpleCursorAdapter simpleCursorAdapter = new SimpleCursorAdapter(context,
-                R.layout.login_activity, data, columns, to, 0);
-        lv.setAdapter(simpleCursorAdapter);
+        if (cursor.moveToFirst()) {
+            while (!cursor.isAfterLast()) {
+                String name = cursor.getString(cursor.getColumnIndex(info));
+                arrayInfo.add(name);
+                cursor.moveToNext();
+            }
+        }
         db.close();
     }
 
@@ -158,15 +162,18 @@ public class DataBaseManager extends SQLiteOpenHelper {
         return rows;
     }
 
-    public void readAllGame (Context context, ListView lv) {
+    public void readAllGame (Context context, ArrayList games, String info) {
         SQLiteDatabase db = this.getWritableDatabase();
         String[] columns = {"_id", "nome", "numeroJogadores"};
-        Cursor data = db.query(TABLE_GAMES, columns, null, null, null,
+        Cursor cursor = db.query(TABLE_USERS, columns, null, null, null,
                 null, null);
-        int[] to = {R.id.signInTextViewEmail, R.id.signInTextViewSenha};
-        SimpleCursorAdapter simpleCursorAdapter = new SimpleCursorAdapter(context,
-                R.layout.login_activity, data, columns, to, 0);
-        lv.setAdapter(simpleCursorAdapter);
+        if (cursor.moveToFirst()) {
+            while (!cursor.isAfterLast()) {
+                String name = cursor.getString(cursor.getColumnIndex(info));
+                games.add(name);
+                cursor.moveToNext();
+            }
+        }
         db.close();
     }
 }
